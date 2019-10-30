@@ -1,0 +1,8 @@
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  tasks:
+    - name: add
+      aws_account_alias:
+        state: present
+        alias: djt-mch
